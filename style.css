@@ -1,0 +1,84 @@
+*
+{
+	margin:0;
+	padding: 0;
+}
+.main{
+	position:relative;
+	top:0;
+	left:0;
+}
+.logo{
+	position: absolute;
+	top:91%;
+	left:45%;
+}
+.name{
+	position: absolute;
+	top:0px;
+	left:42%;
+}
+.metxt{
+	margin-top: 15%;
+	text-align:center;
+	font-family:"Modern Sans";
+	font-size:150%;
+}
+.linkfiller{
+	position:relative;
+	text-align:left;
+	left:0%;
+}
+.links{
+	margin-top: 15%;
+	list-style: none;
+}
+.links li a{
+	padding:5%;
+	color: white;
+	text-decoration: none;
+	font-family: "Modern Sans";
+	font-size: 75px;
+	letter-spacing: 4px;
+	position: absolute;
+	text-align: left;
+	top: 180%;
+	left: 10%;
+}
+.myworkfiller{
+	position:relative;
+	text-align:right;
+	top:0%;
+	right:0%;
+}
+h3{
+	letter-spacing:1.75px;
+}
+.museum{
+	position:absolute;
+	text-align:right;
+	padding:5%;
+	top:180%;
+	right:22%;
+}
+.sunflowers{
+	position:absolute;
+	text-align:right;
+	padding:5%;
+	top:180%;
+	right:1%;
+}
+.sunflowerscopy{
+	position:absolute;
+	text-align:center;
+	padding:5%;
+	top:250%;
+	right:20%;
+}
+.cherreh{
+	position:absolute;
+	text-align:left;
+	padding:5%;
+	top:220%;
+	left:20%;
+}
