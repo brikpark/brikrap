@@ -51,6 +51,9 @@
 	top:0%;
 	right:0%;
 }
+h1{
+	font-size:245%;
+}
 h3{
 	letter-spacing:1.75px;
 }
@@ -81,4 +84,25 @@ h3{
 	padding:5%;
 	top:220%;
 	left:20%;
+}
+header
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-image:url();
+	height:10vh;
+	background-size:cover;
+	background-position:center;
+}
+.logotop img{
+	width: 60px;
+	height: auto;
+	margin-bottom: 30px;
+	padding: 5px;
+	float: left
+}
+.proj{
+	margin-top:110px;
+	margin-left:100px;
 }
