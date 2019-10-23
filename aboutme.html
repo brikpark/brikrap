@@ -1,0 +1,117 @@
+<html>
+<head>
+<title> Projects </title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<header>
+		<div class="logotop">
+				<a href="index.html"><img src="logo3.png" width="auto" height="60%"></a>
+		</div>
+		<div class="main">
+			<center>
+				<input class="name" type="image" src="name.png" width="20%" height="auto" value="submit">
+			</center>
+		</div>
+	</header>
+
+	<div class="proj">
+		<div class="pics">
+			<img src="IMG_1933.JPG" style="float:left; width:auto; height:72%; margin-right:1%; margin-bottom:1%">
+			<img src="lanikai.JPG" style="float:left; width:auto; height:35%; margin-right:1%; margin-bottom:1%">
+			<img src="museum.JPG" style="float:left; width:auto; height:35%; margin-right:1%; margin-bottom:1%">
+			<img src="mainpage.png" style="float:left; width:auto; height:35.1%; margin-right:1%; margin-bottom:1%">
+			
+			<img src="view.JPG" style="float:left; width:auto; height:35%; margin-right:1%; margin-bottom:1%">
+			<img src="meplant.JPG" style="float:left; width:auto; height:35.1%; margin-right:1%; margin-bottom:1%">
+			<img src="sunsetrl.png" style="float:left; width:auto; height:35.1%; margin-right:1%; margin-bottom:1%">
+			<p style="clear:both;">
+		</div>
+	</div>
+	
+	<div class="abtmetext">
+		<h1> About Me </h1>
+		<h2>
+			I am currently a student at Portland State University taking my last and final class to achieve a Bachelor's of Science
+			in Electrical Engineering. My focus is in the Radio-frequency and Analog track. <br>
+			<br>I have always had a passion for art and design.<br>
+			<br>After learning some programming languages in school for, I decided to teach myself HTML and CSS so I could code websites. It
+			brought a whole new passion of web and app development. It brought together the two things I enjoyed: programming and design.<br>
+			<br> Fun facts about me: <br>
+			<br> • I was born and raised in Hawaii <br>
+			<br> • I love music <br>
+			<br> • I can say the alphabet backwards <br>
+		</h2>
+	</div>
+	
+	<!--<div class = "back">
+		<img src="back.png" style="width:100%; height:auto;">
+	</div>-->
+	
+<div class="body">
+  <div class="body-container">
+    <div class="section">
+      <div id="pad-56" class="key-pad">
+        <h3>8</h3><small>chant</small></div>
+      <div id="pad-57" class="key-pad">
+        <h3>9</h3><small>malt</small></div>
+      <div id="pad-48" class="key-pad">
+        <h3>0</h3><small>snap</small></div>
+      <div id="pad-45" class="key-pad">
+        <h3>-</h3><small>blip</small></div>
+
+      <div id="pad-117" class="key-pad">
+        <h3>u</h3><small>knock</small></div>
+      <div id="pad-105" class="key-pad">
+        <h3>i</h3><small>deep</small></div>
+      <div id="pad-111" class="key-pad">
+        <h3>o</h3><small>hihat open</small></div>
+      <div id="pad-112" class="key-pad">
+        <h3>p</h3><small>ting</small></div>
+
+      <div id="pad-104" class="key-pad">
+        <h3>h</h3><small>snap dry</small></div>
+      <div id="pad-106" class="key-pad">
+        <h3>j</h3><small>bass low</small></div>
+      <div id="pad-107" class="key-pad">
+        <h3>k</h3><small>hihat closed</small></div>
+      <div id="pad-108" class="key-pad">
+        <h3>l</h3><small>tom</small></div>
+
+      <div id="pad-98" class="key-pad">
+        <h3>b</h3><small>bass</small></div>
+      <div id="pad-110" class="key-pad">
+        <h3>n</h3><small>rim</small></div>
+      <div id="pad-109" class="key-pad">
+        <h3>m</h3><small>snare</small></div>
+      <div id="pad-44" class="key-pad">
+        <h3>,</h3><small>clap</small></div>
+    </div>
+  </div>
+</div>
+
+<script>
+	var BASE_URL = "https://raw.githubusercontent.com/anilrayamajhi/padControllers/master/sounds/sounds";
+
+	$('body').on("keypress", function(e) {
+  		e.preventDefault();
+  		e = e || window.event;
+  		var audio = new Audio(`${BASE_URL}/${e.keyCode}.wav`);
+  		audio.play();
+  		$(`#pad-${e.keyCode}`).fadeOut(20).fadeIn(20);
+	});
+
+	$('body').on("click", '.key-pad', function(e) {
+  		e = e || window.event;
+  		var id = $(this).attr('id');
+  		var keyCode = id.split("-")[1];
+  		var audio = new Audio(`${BASE_URL}/${keyCode}.wav`);
+  		audio.play();
+  		$(`#pad-${keyCode}`).fadeOut(20).fadeIn(20);
+	});
+</script>
+
+</body>
+
+</html>
