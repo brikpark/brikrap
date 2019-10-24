@@ -3,6 +3,24 @@
 	margin:0;
 	padding: 0;
 }
+/* Mobile Styles*/
+@media only screen and (max-width:400px){
+	body{
+		background-color: red;
+	}
+}
+/* Tablet Styles*/
+@media only screen and (min-width:401px) and (max-width:960px){
+	body{
+		background-color: ;
+	}
+}
+/* Desktop Styles*/
+@media only screen and (min-width:961px){
+	body{
+		background-color: ;
+	}
+}
 .main{
 	position:relative;
 	top:0;
@@ -30,11 +48,10 @@
 	text-align:left;
 	left:0%;
 }
-.links{
+.samplelink{
 	margin-top: 22%;
-	list-style: none;
 }
-.links li a{
+.samplelink li a{
 	padding:5%;
 	color: white;
 	text-decoration: none;
@@ -44,7 +61,8 @@
 	position: absolute;
 	text-align: left;
 	top: 235%;
-	left: 10%;
+	left: 0%;
+	background:black;
 }
 .myworkfiller{
 	position:relative;
@@ -58,33 +76,19 @@ h1{
 h3{
 	letter-spacing:1.75px;
 }
-.museum{
+.sample1{
 	position:absolute;
 	text-align:right;
 	padding:5%;
 	top:245%;
 	right:22%;
 }
-.sunflowers{
+.sample2{
 	position:absolute;
 	text-align:right;
 	padding:5%;
 	top:245%;
 	right:1%;
-}
-.sunflowerscopy{
-	position:absolute;
-	text-align:center;
-	padding:5%;
-	top:250%;
-	right:20%;
-}
-.cherreh{
-	position:absolute;
-	text-align:left;
-	padding:5%;
-	top:220%;
-	left:20%;
 }
 header
 {
@@ -119,12 +123,12 @@ header
 	margin-left:38%;
 	margin-right:38%;
 }
-.reslink li a{
-	color: black;
+a:link{
+	color:black;
 	text-decoration: none;
 }
-.aboutmelink li a{
-	color: black;
+a:visited{
+	color:black;
 	text-decoration: none;
 }
 .abtmetext{
@@ -134,7 +138,7 @@ header
 	margin-right:7%;
 	margin-bottom:5%;
 	color:black;
-	font-family:"Seravek   ";
+	font-family:"Seravek";
 	font-weight:lighter;
 }
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900');
